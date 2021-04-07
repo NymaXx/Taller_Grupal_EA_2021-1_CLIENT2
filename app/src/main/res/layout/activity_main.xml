@@ -8,7 +8,7 @@
     android:background="@drawable/startbackground">
 
     <Button
-        android:id="@+id/startBtn"
+        android:id="@+id/toStart"
         android:layout_width="117dp"
         android:layout_height="51dp"
         android:layout_marginBottom="30dp"

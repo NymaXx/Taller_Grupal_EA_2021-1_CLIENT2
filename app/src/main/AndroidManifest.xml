@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Taller_Grupal_EA_20211_CLIENT2">
-        <activity android:name=".Instructions_activity"></activity>
+        <activity android:name=".GameActivity"></activity>
+        <activity android:name=".Instructions_activity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

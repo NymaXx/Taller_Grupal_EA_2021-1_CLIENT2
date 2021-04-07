@@ -4,6 +4,47 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GameActivity">
+    tools:context=".GameActivity"
+    android:background="@drawable/gamebackground">
 
+    <Button
+        android:id="@+id/upBtn"
+        android:layout_width="91dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="200dp"
+        android:background="@drawable/upbtn"
+        app:layout_constraintBottom_toTopOf="@+id/downBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/leftBtn"
+        android:layout_width="91dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="50dp"
+        android:background="@drawable/leftbtn"
+        app:layout_constraintBottom_toTopOf="@+id/downBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upBtn" />
+
+    <Button
+        android:id="@+id/rightBtn"
+        android:layout_width="91dp"
+        android:layout_height="72dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/rightbtn"
+        app:layout_constraintBottom_toTopOf="@+id/downBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upBtn" />
+
+    <Button
+        android:id="@+id/downBtn"
+        android:layout_width="91dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="144dp"
+        android:background="@drawable/downbtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

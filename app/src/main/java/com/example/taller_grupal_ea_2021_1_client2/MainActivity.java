@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch ((v.getId())){
             case R.id.toStart:
-                Intent iG = new Intent(this, GameActivity.class);
+                Intent iG = new Intent(this, ConectionScreen.class);
                 startActivity(iG);
                 break;
 

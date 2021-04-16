@@ -18,6 +18,7 @@ public class TCPConection extends Thread{
     private BufferedReader reader;
     private BufferedWriter writer;
     private String ip;
+    private String puerto;
 
     private OnListener observer;
 
@@ -37,7 +38,7 @@ public class TCPConection extends Thread{
 
     public void run() {
         try {
-            this.socket = new Socket(this.ip,5000);
+            this.socket = new Socket(this.ip, Integer.parseInt(this.puerto));
 
             //Reader
             InputStream is = socket.getInputStream();
@@ -59,8 +60,9 @@ public class TCPConection extends Thread{
     }
 
     //Solicitar conexion
-    public void solicitarConexion(String ip){
+    public void solicitarConexion(String ip,String puerto){
         this.ip = ip;
+        this.puerto=puerto;
         this.start();
     }
 

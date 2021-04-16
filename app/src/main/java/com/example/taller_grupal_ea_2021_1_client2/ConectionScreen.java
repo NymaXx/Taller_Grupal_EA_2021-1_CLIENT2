@@ -1,5 +1,6 @@
 package com.example.taller_grupal_ea_2021_1_client2;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.Button;
@@ -37,6 +38,9 @@ public class ConectionScreen extends AppCompatActivity implements OnListener {
 
                 Log.e("TAG",ipS+" "+puertoS );
                 tcp.solicitarConexion(ipS,puertoS);
+
+                Intent intent= new Intent(this,GameActivity.class);
+                startActivity(intent);
 
             }
         } );

@@ -1,4 +1,4 @@
-package com.example.taller_grupal_ea_2021_1_client2;
+package com.example.taller_grupal_ea_2021_1_client2.actividades;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import com.example.taller_grupal_ea_2021_1_client2.R;
+import com.example.taller_grupal_ea_2021_1_client2.actividades.GameActivity;
 
 public class Instructions_activity extends AppCompatActivity implements View.OnClickListener {
 

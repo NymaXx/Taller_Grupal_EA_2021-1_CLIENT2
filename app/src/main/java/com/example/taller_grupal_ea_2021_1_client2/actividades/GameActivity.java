@@ -1,4 +1,4 @@
-package com.example.taller_grupal_ea_2021_1_client2;
+package com.example.taller_grupal_ea_2021_1_client2.actividades;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,15 +7,15 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.taller_grupal_ea_2021_1_client2.comunicacion.Coordenada;
+import com.example.taller_grupal_ea_2021_1_client2.comunicacion.OnListener;
+import com.example.taller_grupal_ea_2021_1_client2.R;
+import com.example.taller_grupal_ea_2021_1_client2.comunicacion.TCPConection;
 import com.google.gson.Gson;
 
 import java.io.BufferedWriter;
-import java.io.IOException;
-import java.io.OutputStream;
-import java.io.OutputStreamWriter;
-import java.net.Socket;
 
-public class GameActivity extends AppCompatActivity implements View.OnTouchListener,OnListener{
+public class GameActivity extends AppCompatActivity implements View.OnTouchListener, OnListener {
 
     private Button upBtn;
     private Button downBtn;

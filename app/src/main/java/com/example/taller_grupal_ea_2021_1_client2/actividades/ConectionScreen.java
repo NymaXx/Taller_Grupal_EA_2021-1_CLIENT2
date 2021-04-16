@@ -1,4 +1,4 @@
-package com.example.taller_grupal_ea_2021_1_client2;
+package com.example.taller_grupal_ea_2021_1_client2.actividades;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,6 +8,10 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.taller_grupal_ea_2021_1_client2.comunicacion.OnListener;
+import com.example.taller_grupal_ea_2021_1_client2.R;
+import com.example.taller_grupal_ea_2021_1_client2.comunicacion.TCPConection;
 
 public class ConectionScreen extends AppCompatActivity implements OnListener {
 
@@ -39,7 +43,7 @@ public class ConectionScreen extends AppCompatActivity implements OnListener {
                 Log.e("TAG",ipS+" "+puertoS );
                 tcp.solicitarConexion(ipS,puertoS);
 
-                Intent intent= new Intent(this,GameActivity.class);
+                Intent intent= new Intent(this, GameActivity.class);
                 startActivity(intent);
 
             }
